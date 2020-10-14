@@ -1,0 +1,1117 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans', 'Barlow', 'Nanum square';
+}
+
+body{
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+.wrap{
+    width: 95%;
+    margin:0 auto;
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    height: 280px;
+    background-color: white;
+
+    z-index: 30;
+}
+
+.bgHeader{
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+
+    display: none;
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    z-index: 9;
+}
+
+/* 탑메뉴 */
+
+.topMenu{
+    width: 95%;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+
+    z-index: 10;
+}
+
+.topMenu > div > ul> li{
+    float: left;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+
+/* 탑메뉴 데코레이션 효과 */
+
+.topMenu > #leftMenu > ul > li:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: 0;
+    background-color: #333;
+    transition:all ease 0.5s;
+}
+
+/* 탑 메뉴 첫번째 메뉴에는 효과가 나타나지 않음 */
+.topMenu > #leftMenu > ul > li:first-child:after{
+    content: '';
+    width: 0px;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: #333;
+}
+
+/* 탑메뉴 데코레이션 효과 */
+
+.topMenu > #leftMenu > ul > li > a:after{
+    content: '';
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    z-index: 2;
+    border-left: 3px solid #ffffff;
+    transition:all ease 1s;
+}
+
+/* 탑 메뉴 첫번째 메뉴에는  효과가 나타나지 않음*/
+.topMenu > #leftMenu > ul > li:first-child > a:after{
+    content: '';
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    z-index: 1;
+    border-left: 0px solid #ffffff;
+    transition:all ease 1s;
+}
+
+
+/* 탑메뉴 데코레이션 효과 2 */
+.topMenu > #leftMenu > ul > li:before{
+    content: '';
+    width: 3px;
+    height: 0;
+    position: absolute;
+    bottom: 37px;
+    left: 6px;
+    margin-bottom: -3px;
+    border-bottom: 3px solid #fff;
+    background-color: #333;
+    transition:all ease 0.25s;
+    z-index: 1;
+}
+
+/* 탑메뉴 데코레이션 효과2 없음 */
+.topMenu > #leftMenu > ul > li:first-child::before{
+    content: '';
+    width: 3px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+}
+
+
+
+
+/* 탑 메뉴 마우스 호버시 나타나는 효과 */
+
+.topMenu > #leftMenu > ul > li:hover:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: 0%;
+    right: 0;
+    background-color: #333;
+    transition:all ease 1s;
+}
+.topMenu > #leftMenu > ul > li:first-child:hover:after{
+    content: '';
+    width:0;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0;
+    background-color: #333;
+    transition:all ease 1s;
+}
+
+.topMenu > #leftMenu > ul > li:hover:before{
+    content: '';
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    bottom: 37px;
+    left: 6px;
+    margin-bottom: 3px;
+    border-bottom: #ffffff;
+    background-color: #333;
+    transition:all ease 0.25s 0.7s;
+    z-index: 2;
+}
+.topMenu > #leftMenu > ul > li:first-child:hover:before{
+    content: '';
+    width:0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    background-color: #333;
+    transition:all ease 1s 1s;
+}
+
+
+
+
+/* 탑메뉴 왼쪽 */
+#leftMenu{
+    float: left;
+    height: 100%;
+}
+
+#leftMenu > ul{
+    height: 80px;
+    margin-top: 0px;
+}
+
+#leftMenu > ul > li{
+    height: 50px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    line-height: 60px;
+}
+
+#leftMenu > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display:block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+}
+
+
+/* 탑 메뉴 로고 */
+#logo > img{
+    width: 100px;
+    height: 100%;
+}
+#logoLink{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+/* 탑 메뉴 왼쪽 설정*/
+
+#cur, #brand, #show, #event{
+    font-size: 26px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* 탑 메뉴 오른쪽 */
+
+#rightMenu{
+    width: auto;
+    height: 100px;
+    float: right;
+    
+}
+
+#rightMenu > ul{
+    width: auto;
+    height: 30px;
+}
+#rightMenu > ul > li{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+#rightMenu > ul > li > a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+
+/* 탑 메뉴 오른쪽 아이콘 */
+#search{
+    background-image: url('../img/top_icon/btn_top_search.png');
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+}
+#login{
+    background-image: url('../img/top_icon/btn_top_login.png');
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+}
+#cart{
+    background-image: url('../img/top_icon/btn_top_order.png');
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* 탑메뉴2*/
+
+
+.lowMenu{
+    width: 95%;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    z-index: 12;
+    background-color: #fff;
+
+}
+
+
+.lowMenu > div >ul>li{
+    float: left;
+    margin-right: 30px;
+    line-height: 50px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.lowMenu > div > ul > li > a{
+    width: calc(100% - 20px);
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+
+/* 탑메뉴2의 데코레이션 */
+.lowMenu > div > ul > li > a:before{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: 0;
+    background-color: #333;
+    transition:all ease 0.5s;
+}
+
+
+/* 탑메뉴2의 마우스 호버시 나타나는 효과 */
+.lowMenu > div > ul > li > a:hover::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+    left: 0%;
+    right: 0;
+    background-color: #333;
+    transition:all ease 0.5s;
+}
+
+
+
+/* 탑메뉴2의 왼쪽설정 */
+
+#leftMenuLow{
+    float: left;
+    font-size: 16px;
+    color: #666;
+}
+
+/* 탑메뉴2의 왼쪽의 원형 데코레이션 */
+
+#leftMenuLow > ul >li:after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-radius: 50%;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+/* 탑메뉴2의 올 메뉴 설정 */
+#shopMenu{
+    width: 45px;
+    height: 45px;
+    background-color: #2d251c;
+    border-radius: 50%;
+    padding-right: 0;
+}
+#shopMenu > .shopImg{
+    width: 45px;
+    height: 45px;
+    background-image: url('../img/top_icon/btn_all_menu.png');
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+}
+
+
+/* 탑메뉴2의 첫번쨰와 마지막의 원형 데코 제거 */
+#leftMenuLow > ul >li:first-child:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-radius: 50%;
+    background-color: none;
+    position: unset;
+    top: 0%;
+    left: 0;
+}
+
+#leftMenuLow > ul >li:last-child::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-radius: 50%;
+    background-color: none;
+    position: unset;
+    top: 0%;
+    left: 0;
+}
+
+
+
+
+/* 탑메뉴2의 오른쪽 */
+#rightMenuLow{
+    float: right;
+}
+#rightMenuLow > ul > li{
+    font-size: 16px;
+    color: #666;
+}
+
+#rightMenuLow > ul > li:last-child{
+    padding: 0;
+    margin: 0;
+}
+
+/* 탑메뉴2의 오른쪽 메뉴 원형 데코레이션 */
+#rightMenuLow > ul >li:after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: block;
+    border-radius: 50%;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#rightMenuLow > ul >li:last-child:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: none;
+    border-radius: 50%;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+.lowMenu > #rightMenuLow > ul > li:last-child > a{
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+/* 스크롤 이벤트 헤더 변환 */
+
+.scroll{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+.scroll > .topMenu > #rightMenu > ul{
+    width: auto;
+    height: 30px;
+
+    margin-top: 10px;
+}
+
+.scroll > .topMenu{
+    width: calc(100% - 80px);
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+
+    border-bottom: 1px solid #ccc;
+
+    padding: 0 40px;
+}
+
+.scroll > .topMenu > div > ul> li{
+    float: left;
+    margin-top: 20px;
+    position: relative;
+}
+
+.scroll > .topMenu > #leftMenu > ul > #logo > img{
+    width: 80px;
+    height: 80%;
+}
+
+.scroll > .lowMenu{
+    width: 50px;
+    top: 25px;
+    left: 650px;
+    background-color: unset;
+}
+
+.scroll > .lowMenu > div > ul > li{
+    display: none;
+}
+
+.scroll > .lowMenu > div > ul > li#shopMenu{
+    display: block;
+}
+
+
+/* 전체 메뉴창 */
+
+#wholeMenu{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+}
+
+/* 전체 메뉴창 데코 */
+
+#wholeMenu::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-top: 2px solid #000;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 6;
+    transition: all 0.5s;
+}
+
+#wholeMenu > ul{
+    width: 200px;
+    height: 100%;
+    font-size: 18px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+
+#wholeMenu > ul >li{
+    font-weight: bold;
+    padding-left: 30px;
+    line-height: 50px;
+    position: relative;
+}
+
+.wholeTitle > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 전체 메뉴 아이콘 데코 */
+.wholeIcon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+#wholIcon1::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_off_01.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+#wholIcon2::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_off_02.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+#wholIcon3::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_off_03.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+#wholIcon4::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_off_04.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+/* 전체 메뉴 아이콘 호버 */
+
+.wholeTitle:hover > .wholeIcon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.wholeTitle:hover > #wholIcon1::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_on_01.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.wholeTitle:hover > #wholIcon2::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_on_02.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.wholeTitle:hover > #wholIcon3::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_on_03.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.wholeTitle:hover > #wholIcon4::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/wholeMenu_icon/all_menu_icon_on_04.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+/* 전체 메뉴 리스트 */
+.wholeList > ul{
+    font-weight: normal;
+    line-height: 40px;
+    color: #999;
+}
+.wholeList > ul >li{
+    display: inline-block;
+    margin-right: 30%;
+    position: relative;
+}
+.wholeList > ul > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/* 전체 메뉴 리스트 데코 */
+
+.wholeList > ul > li::after{
+    content: '';
+    width: 0px;
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    border-top: 1px solid #000;
+    transition: all 0.5s;
+}
+
+/* 전체 메뉴 리스트 호버 */
+.wholeList > ul > li:hover::after{
+    content: '';
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    border-top: 1px solid #000;
+    transition: all 0.5s;
+}
+
+
+
+/* 상단 검색창 메뉴 */
+#searchBtn {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+#searchWrap{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+/* 검색창 메인 */
+
+#searchTitle{
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+/* 검색창 닫기 버튼 */
+#searchClo{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/search/btn_top_search_close.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+
+/* 검색창 */
+#searchMap{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+#searchInp{
+    position: relative;
+}
+
+#searchAr{
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+
+    padding-left: 60px;
+}
+
+#searchAr:focus{
+    outline: 1px solid #333;
+}
+
+
+/* 검색창 라벨 */
+#searchLab{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    font-size: 18px;
+    color: #fff;
+    line-height: 60px;
+}
+
+
+/* 검색 버튼 */
+#searchpoint{
+    width: 60px;
+    height: 60px;
+
+    background-image: url('../img/search/btn_top_search_go.png');
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+
+/* 검색 리스트 */
+
+#searchList{
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+    
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+#searchList > li{
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+
+    margin-right: 60%;
+}
+
+#searchList > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/* 쇼핑백 메뉴 */
+
+#shopbagBtn{
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    right: -600px;
+    z-index: 50;
+
+    visibility: hidden;
+
+}
+
+#shopbagMenu{
+    width: 500px;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    right: -600px;
+    z-index: 30;
+    background-color: #fff;
+
+    line-height: 40px;
+}
+
+#casabtn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#casabtn::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+
+    background-image: url('../img/shopbag/member_icon_white.png');
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#shopbagMenu > p{
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+
+#shopbagMenu > span{
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url('../img/shopbag/btn_quick_close.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+
+/* 쇼핑백 선택 메뉴 */
+
+#shopwrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-bottom: 85px;
+    overflow-y: auto;
+}
+
+#shopOthr{
+    width: 100%;
+    height: 250px;
+    background-color: #2d251c;
+    color: #fff;
+    margin-top: 100px;
+
+    overflow:auto;
+}
+
+.othrMenu{
+    width: calc(100% / 3);
+    text-align: center;
+    float: left;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    position: relative;
+    margin-top: 30px;
+}
+
+.othrMenu::after{
+    content: '';
+    width: 3px;
+    height: 100%;
+
+    border-right: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.othrMenu:last-child::after{
+    content: '';
+    width: 3px;
+    height: 100%;
+
+    border-right: 0px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+.shopothrList{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.shopothrList > ul >li{
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+
+/* 카트 아이템 이미지 */
+
+.cartImgList{
+    width: calc(100%-40px);
+    height: 160px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.cartImgList > h3{
+    font-size: 16px;
+    color: #666;
+}
+
+#cartList {
+    position: relative;
+}
+#cartList > span{
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    background-color: #2d251c;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+
+.cartItem{
+    width: 100%;
+    height: 130px;
+
+    margin-top: 20px;
+    border-top: 1px solid #ccc ;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 130px;
+
+    color: #999;
+
+    font-weight: 500;
+}
+
+
+.maindark{
+    width: 100%;
+    height: 100%;
+
+    background-color: #000;
+    opacity: 0.7;
+
+    position: fixed;
+    top: 0px;
+    left: 0;
+
+    z-index: 8;
+    display: none;
+}
+
+
+
+/* 탑으로 올라가기 */
+
+
+.topBtn{
+    width: 45px;
+    height: 45px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+    z-index: 50;
+    
+    display: none;
+}
+
+#topArrow{
+    width: 45px;
+    height: 45px;
+
+    background-image: url('../img/topbtn/btn_page_top.png');
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+}

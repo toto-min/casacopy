@@ -1,0 +1,1484 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans', 'Barlow', 'Nanum square';
+}
+
+body{
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+.wrap{
+    width: 95%;
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+/* 메인 화면 */
+section{
+    width: 100%;
+}
+section>article:first-child{
+    margin-top: 0;
+}
+
+/* 메인 화면의 단락 설정 */
+
+article{
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+}
+
+
+
+
+/* 첫번째 페이지 */
+
+#first >div a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 첫번째 페이지의 왼쪽 */
+.mainLeft{
+    width: calc(((100% - 20px) /4)*3);
+    height: 100%;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+
+}
+
+.mainImg{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mainImg > img{
+    width: 1000px;
+    height: 600px;
+    transform: translateX(-30px);
+}
+
+/* 첫번째 페이지의 왼쪽 이미지 서브 메뉴 */
+
+.mainBag{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background-color: white;
+    border:1px solid #cacaca;
+    border-radius: 50%;
+}
+.mainBag > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 첫번째 페이지의 오른쪽 메뉴*/
+
+.mainRight{
+    width: calc((100% - 20px) / 4);
+    height: 100%;
+    float: right;
+}
+.mainRight > div{
+ width: 100%;   
+ height: 290px;
+ position: relative;
+ color: #ffffff;
+ font-size: 20px;
+ font-weight: 500;
+ overflow: hidden;
+}
+
+
+/* 첫번째 페이지의 오른쪽 메뉴 설명 */
+.mainRight > div> p{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.mainRight > div:after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    transform: translateX(-100%);
+    transition:all ease 0.5s;
+}
+
+/* 첫번째 페이지의 오른쪽 메뉴 호버시 나타나는 효과 */
+.mainRight > div:hover:after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    transform: translateX(0);
+    transition:all ease 0.5s;
+}
+
+
+/* 첫번째 페이지의 오른쪽 메뉴 이미지 */
+
+.rightTopImg{
+    margin-bottom: 20px;
+}
+
+/* 첫번째 페이지 오른쪽 상단 */
+.rightTopImg > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 첫번째 페이지 오른쪽 하단 */
+.rightBtoImg > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 두번째 페이지(이벤트 페이지) */
+
+#sec{
+    width: 100%;
+    height: 1000px;
+}
+
+
+/* 두번째 페이지(이벤트 페이지) 전체 설정 */
+
+.eventLeft{
+    width: calc(((100% - 31px)/3));
+    height: 100%;
+    float: left;
+    padding-right: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.eventLeft > div{
+    width: 95%;
+    height: calc((100% - 20px) / 2);
+}
+
+
+/* 두번째 페이지(이벤트 페이지) 이미지 */
+.eventLeft > div > .imgFrame{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 두번째 페이지(이벤트 페이지) 왼쪽 이미지 */
+.eventLeft> div > .imgFrame> img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1,1);
+    transition: all ease 1s;
+}
+
+.eventLeft > div > .imgFrame > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 두번째 페이지(이벤트 페이지) 왼쪽 마우스 호버효과*/
+
+.eventLeft>div > .imgFrame:hover > img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1,1.1);
+}
+
+/* 두번째 페이지(이벤트 페이지) 왼쪽 설명  */
+
+.eventLeft > div > .pBox{
+    width: auto;
+    height: 100px;
+    position: relative;
+}
+
+.eventLeft > div > .pBox > h1{
+    font-size: 24px;
+    font-weight: lighter;
+    color: #666;
+    float: left;
+    margin-top: 20px;
+}
+.eventLeft > div > .pBox> p{
+    font-size: 14px;
+    float: left;
+    margin-top: 10px;
+    color: #999999;
+}
+
+.eventLeft > div > .pBox > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* 두번째 페이지(이벤트 페이지) 하단 여백 */
+.eventLeftBottom{
+    margin-top: 20px;
+}
+
+
+
+
+/* 두번째 페이지(이벤트 페이지) 오른쪽 */
+
+.eventRight{
+    width: calc(((100% - 31px) / 3) * 2);
+    height: 100%;
+    float: right;
+}
+
+.eventRightTop{
+    position: relative;
+    right: 0;
+}
+
+.eventRight > div{
+    width: 100%;
+    height: calc((100% - 2px)/2);
+}
+
+/* 두번째 페이지(이벤트 페이지) 오른쪽 메뉴 왼쪽 이미지 프레임 */
+.eventRight  div > .eventImgFr{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.eventRight  div> div.eventImgFr > img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1,1);
+    transition: all 1s;
+}
+
+.eventImgFr > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 이미지 커버 */
+
+.dark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    transition: all 1s;
+    color: #fff;
+    text-align: center;
+}
+
+.dark > p.label{
+    width: 100px;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #fff;
+    margin: 50% 0 0 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.dark > p.itemName{
+    color: #fff;
+    font-size: 16px;
+    display: none;
+}
+
+
+/*두번째 페이지(이벤트 페이지) 오른쪽 메뉴 왼쪽 이미지 호버 */
+
+.eventRight  div> div.eventImgFr:hover > img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1,1.1);
+    transition: all 1s;
+}
+
+.eventImgFr:hover > .dark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.eventImgFr:hover > .dark > p.label{
+    width: 100px;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #fff;
+    margin: 50% 0 0 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+.eventImgFr:hover > .dark > p.itemName{
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+
+
+
+
+/* 두번째 페이지(이벤트 페이지) 오른쪽 메뉴의 왼쪽 이미지 영역 */
+
+.eventRight > div > .eventLitem {
+    width: calc((100% - 2px)/3);
+    height: 100%;
+    float: left;
+}
+.eventRight > div > .eventLitem > .eventLTopitem{
+    height: calc((100% - 2px)/2);
+    margin-bottom: 2px;
+}
+.eventRight > div > .eventLitem>.eventLBtomitem{
+    height: calc((100% - 2px)/2);
+}
+
+
+
+
+/* 두번째 페이지 오른쪽 메뉴의 오른쪽 이미지 설정 */
+
+.eventRitem{
+    width: calc(((100% - 2px)/3)*2);
+    height: 100%;
+    /* float: right; */
+    position: relative;
+    right: 0;
+    overflow:hidden
+}
+.eventRightTop{
+    margin-bottom: 2px;
+}
+
+/*두번째 페이지 오른쪽 메뉴의 오른쪽 이미지 */
+
+.eventSlide{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.eventSlide > .eventRImgFr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+}
+.eventRImgFr > img{
+    width: 100%;
+    height: 100%;
+}
+
+.eventSlide > .eventRImgFr > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+}
+
+
+
+/* 두번째 메뉴(이벤트 페이지) 이미지 슬라이드 */
+
+#imgScale{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 2;
+    transform: translate(50px, -50px) scale(1.2,1.2);
+}
+
+/* 두번째 메뉴(이벤트 페이지) 이미지 슬라이드 설명 */
+
+.boxEx{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    z-index: 3;
+    color: rgb(82, 53, 53);
+    z-index: 3;
+}
+
+.boxEx > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 이미지 슬라이드 설명의 박스 */
+.boxEx > .box{
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #666;
+    color: #999;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 4;
+}
+.boxEx > .box > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boxEx > .boxInfo{
+    font-size: 28px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.boxEx > .boxPrice{
+    font-size: 24px;
+}
+
+/* 이미지 슬라이드의 설명 박스 호버 */
+
+.boxEx > .box:hover{
+    font-size: 16px;
+    background-color: #666;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+
+/* 이미지 슬라이드  선택 버튼 */
+
+#btn{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    z-index: 5;
+}
+#btn > li{
+    width: 20px;
+    height: 4px;
+    background-color: #ccc;
+    margin-top: 10px;
+    text-indent: -99999px;
+    position: relative;
+}
+
+#btn > li.active{
+    background-color: #ff8400;
+    width: 40px;
+}
+
+#btn > .btnSelect > a{
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+   
+}
+
+/* 두번째 메뉴(이벤트 페이지) 하단 이미지 설명 */
+
+#infoBox{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    z-index: 2;
+    color: #fff;
+    transition: all 0.7s;
+}
+#imgName{
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+#eventRimginfo{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 1;
+}
+
+
+/* 두번째 메뉴(이벤트 페이지) 하단 이미지 효과 */
+
+.eventRImgFr:hover > #infoBox{
+    position: absolute;
+    left: 40px;
+}
+
+
+
+
+/* 세번째 메뉴 할인 아이템  */
+
+#third{
+    width: 100%;
+    height: 600px;
+    /* overflow-y: hidden; */
+}
+
+#third > div{
+    width: calc(100% / 2);
+    height: 100%;
+}
+
+
+
+/* 세번째 메뉴 왼쪽 이미지 슬라이드 */
+.colLeft{
+    float: left;
+    position: absolute;
+    left: 0;
+}
+.colLImg{
+    width: 100%;
+    height: 100%;
+}
+
+.colLitem{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+}
+.colSlide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.colLImgFr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    
+}
+.colLImgFr > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    z-index: 2;
+}
+
+.colLImgFr > a{
+    width: 140%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* 세번째 메뉴 왼쪽 이미지 슬라이드 설명 */
+.colLImgFr > .boxEx2{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    z-index: 3;
+    color: #999;
+    text-align: right;
+}
+
+/* 세번째 메뉴 왼쪽 이미지 슬라이드 설명 박스 */
+.boxEx2 > .box{
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #666;
+    color: #999;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 4;
+}
+.boxEx2 > .box > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boxEx2 > .boxInfo{
+    font-size: 28px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.boxEx2 > .boxPrice{
+    font-size: 24px;
+}
+
+.boxEx2 >a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* 세번째 메뉴 왼쪽 이미지 슬라이드 설명 박스 호버 */
+.boxEx2 > .box:hover{
+    font-size: 16px;
+    background-color: #666;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+
+/* 세번째 메뉴 왼쪽 이미지 슬라이드 선택 버튼 */
+#btn2{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    z-index: 5;
+}
+#btn2 > li{
+    width: 20px;
+    height: 4px;
+    background-color: #ccc;
+    margin-top: 10px;
+    text-indent: -99999px;
+    position: relative;
+}
+
+#btn2 > li.active{
+    background-color: #ff8400;
+    width: 40px;
+}
+
+
+
+
+
+
+/* 세번째 메뉴 오른쪽 메뉴 이미지 */
+
+.colRight{
+    float: right;
+}
+
+.colRImg{
+    width: 100%;
+    height: 100%;
+}
+
+.colRImg > div{
+    width: 100%;
+    height: calc((100% - 20px)/2);
+    position: relative;
+    color: white;
+}
+
+.colRImg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+.colRImg >div > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 세번째 메뉴 오른쪽 메뉴 이미지  상단*/
+#colRImgTop{
+    margin-bottom: 20px;
+}
+
+#colRImgTop > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 세번째 메뉴 오른쪽 메뉴 이미지  상단*/
+#colRImgBot{
+    margin-top: 20px;
+}
+
+/* 세번째 메뉴 오른쪽 메뉴 이미지 설명 */
+.imgInfo{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+
+    transition: all 1s;
+}
+
+.imgInfo > .mainFont{
+    font-size: 48px;
+    color: white;
+}
+
+.imgInfo > .subFont{
+    font-size: 18px;
+    color: white;
+}
+
+
+/* 세번째 메뉴 오른쪽 메뉴 이미지 호버 */
+.colRImg > div:hover > .imgInfo{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+
+
+
+
+/* 네번째 메뉴 */
+#four{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+
+
+
+/* 네번째 메뉴 선택 바 */
+#itemTopMenu{
+    width: 100%;
+    height: 80px;
+}
+
+#listName{
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+#listName>li{
+    width: calc((100%-(20px*4))/4);
+    float: left;
+    margin-left: 20px;
+}
+
+
+#listName > li > span{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    color: #999;
+    overflow: hidden;
+}
+
+/* 클릭시 이벤트 */
+
+#listName > li.listactive > span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    left: auto;
+    right: 0;
+    background-color: #333;
+    transition: all ease 0.5s;
+}
+
+/* 네번째 메뉴 선택 바 데코 */
+
+#listName > li > span::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    left: auto;
+    right: 0;
+    background-color: #333;
+    transition: all ease 0.5s;
+}
+
+/* 네번째 메뉴 선택 바 데코 효과 */
+#listName > li > span:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    right: 0;
+    background-color: #333;
+    transition: all ease 0.5s;
+}
+
+
+/* 네번째 메뉴 이미지 */
+
+.tapitemimg{
+    width: 100%;
+}
+
+.itemlistPicF{
+    width: 100%;
+    display: none;
+}
+
+.tapActive{
+    display: block;
+}
+.itemList{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.item{
+    width:calc((100% - (10px *4))/4);
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+}
+
+.item > .itemlistpic{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.item > .itemlistpic > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 4;
+}
+
+
+/* 이미지 */
+#itemlistPicF1 #listPic1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+#itemlistPicF1 #listPic2{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic4{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic5{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic6{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic7{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_7.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic8{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic9{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_9.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic10{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_10.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic11{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_11.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+#itemlistPicF1 #listPic12{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/1_12.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+
+/* 홈웨어 탭 */
+#itemlistPicF2 #listPic1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic2{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic4{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic5{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic6{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic7{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_7.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic8{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic9{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF2 #listPic10{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/2_10.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+
+/* 라이팅 탭 */
+
+#itemlistPicF3 #listPic1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic2{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic4{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic5{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic6{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic7{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_7.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic8{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic9{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF3 #listPic10{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/3_10.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+/* 라이프 탭 */
+
+#itemlistPicF4 #listPic1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic2{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic3{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic4{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic5{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic6{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic7{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_7.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic8{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic9{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+#itemlistPicF4 #listPic10{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/forth_img/4_10.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+}
+
+/*  */
+
+.new{
+    display: inline-block;
+    font-size: 12px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 8px;
+}
+
+/* 이미지 데코 */
+
+.itemlistpic > .dark{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.darkBox{
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 120px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.shopBag{
+    width: 30px;
+    height: 100%;
+    background-image: url('../img/hover_icon/hover_data_icon_01.png');
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 100px;
+    transform: translateY(50px);
+
+}
+
+.heart{
+    width: 30px;
+    height: 100%;
+    background-image: url('../img/hover_icon/hover_data_icon_02.png');
+    background-repeat: no-repeat;
+    float: left; 
+    margin-left: 15px; 
+    transform: translateY(50px);
+
+}
+
+#oneHeart{
+    margin-left: 130px;
+}
+
+
+.heart > p{
+    font-size: 14px;
+    transform: translateY(30px);
+}
+
+
+
+/* 이미지 효과 */
+
+.itemlistpic:hover > .picList{
+    transform: scale(1.1, 1.1);
+}
+
+.itemlistpic:hover > .dark{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* 이미지 팝 효과 */
+
+.itemlistpic:hover > .dark > .darkBox{
+    width: 100%;
+    height: 50px;
+    opacity: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 120px;
+    z-index: 3;
+}
+
+.itemlistpic:hover > .dark > .darkBox > .shopBag{
+    transform: translateY(0px);
+    transition: all 0.5s .2s;
+}
+
+
+.itemlistpic:hover > .dark > .darkBox > .heart{
+    transform: translateY(0px);
+    transition: all 0.5s .3s;
+}
+
+
+
+/* 네번째 메뉴 이미지 설명 박스 */
+.itemEx{
+    margin-top: 20px;
+}
+
+
+/* 이미지 슬라이드 설명의 박스 */
+.itemEx > .box{
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #666;
+    color: #999;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+.itemEx > .box > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.itemEx > .boxInfo{
+    font-size: 14px;
+    color: #999;
+    position: relative;
+}
+
+.itemEx > .boxInfo > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.itemEx > .boxPrice{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boxPrice > span{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+/* 이미지 슬라이드의 설명 박스 호버 */
+
+.itemEx > .box:hover{
+    font-size: 12px;
+    background-color: #666;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+

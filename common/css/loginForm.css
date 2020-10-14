@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans', 'Barlow', 'Nanum square';
+}
+
+body{
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* 로그인 폼 */
+.wrap{
+    width: 95%;
+    margin:0 auto;
+}
+
+#loginCh{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* 로그인 제목 */
+
+.login{
+    text-align: center;
+}
+
+.login > h1{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* 아이디 비밀번호 입력창 */
+form > input{
+    width: 380px;
+    height: 60px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    padding: 0 0 0 20px;
+    background-color: #efefef;
+}
+
+form > input:focus 
+{outline:1px solid #000;
+    background-color: #efefef;
+}
+
+
+/* 로그인 버튼 */
+
+#loginbtn{
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+/* 체크박스 */
+
+#idPwChk{
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+    margin: 30px 0;
+}
+
+#idPwChk > li{
+    padding: 0 10px;
+    border-left: 1px solid #999;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+
+#idPwChk > li:first-child{
+    border-left: 0px solid #999;
+    padding-left: 10px;
+    position: relative;
+}
+
+#idPwChk > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* SNS로그인 버튼 */
+
+
+#snsLogin{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#snsIcon {
+    width: 100%;
+    height: 50px;
+    padding-left: 70px;
+    margin-top: 30px;
+}
+#snsIcon >li{ 
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+#snsIcon > li > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* SNS아이콘 */
+
+#faceBook{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/login/btn_member_sns_facebook.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#kakaoTalk{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/login/btn_member_sns_kakao.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#naver{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/login/btn_member_sns_naver.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 비회원 주문배송 조회 */
+
+.notmemberOrder{
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    margin: 50px auto;
+}
+
+.notmemberOrder > p{
+    position: relative;
+    display: inline-block;
+}
+
+.notmemberOrder > p> a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curation</title>
+    <link rel="stylesheet" href="../css/headerStyle.css">
+    <link rel="stylesheet" href="../css/footerStyle.css">
+    <link rel="stylesheet" href="../css/curationStyle.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- 헤더 -->
+        <header>
+
+
+            <!-- 탑 메뉴 -->
+            <div class="topMenu">
+
+                <!-- 탑 메뉴 왼쪽 로고 -->
+                <div id="leftMenu">
+                    <ul>
+                        <li id="logo">
+                            <img src="../img/top_icon/logo_new.png" alt="">
+                            <a href="../../index.html" id="logoLink"></a>
+                        </li>
+                        <li id="cur">CURATION
+                            <a href="../html/curation.html"></a>
+                        </li>
+                        <li id="brand">BRAND
+                            <a href="#"></a>
+                        </li>
+                        <li id="show">SHOW
+                            <a href="#"></a>
+                        </li>
+                        <li id="event">EVENT
+                            <a href="#"></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- 탑 메뉴 오른쪽 장바구니 -->
+                <div id="rightMenu">
+                    <ul>
+                        <li id="search">
+                            <a href="#" id="searchLink"></a>
+                        </li>
+                        <li id="login">
+                            <a href="../html/loginForm.html" id="loginLink"></a>
+                        </li>
+                        <li id="cart">
+                            <a href="#" id="cartLink"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 탑 메뉴2 -->
+            <div class="lowMenu">
+
+                <!-- 탑 메뉴2 왼쪽 -->
+                <div id="leftMenuLow">
+                    <ul>
+                        <li id="shopMenu">
+                            <div class="shopImg"></div>
+                        </li>
+                        <li id="fur">
+                            <a href="#"></a>
+                            FURNITURE</li>
+                        <li id="home">
+                            <a href="#"></a>
+                            HOMEWARE</li>
+                        <li id="light">
+                            <a href="#"></a>
+                            LIGHTING</li>
+                        <li id="life">
+                            <a href="#"></a>
+                            LIFE</li>
+                    </ul>
+                </div>
+
+                <!-- 탑 메뉴2 오른쪽 -->
+                <div id="rightMenuLow">
+                    <ul>
+                        <li id="best">
+                            <a href="#"></a>
+                            BEST</li>
+                        <li id="NEW">
+                            <a href="#"></a>
+                            NEW</li>
+                        <li id="like">
+                            <a href="#"></a>
+                            LIKE IT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="wholeMenu">
+                <ul class="whole" id="whol1">
+                    <li class="wholeTitle">
+                        <span class="wholeIcon" id="wholIcon1"></span>
+                        FURNITURE
+                        <a href="#"></a>
+                    </li>
+                    <li class="wholeList">
+                        <ul>
+                            <li>소파
+                                <a href="#"></a>
+                            </li>
+                            <li>체어
+                                <a href="#"></a>
+                            </li>
+                            <li>침대
+                                <a href="#"></a>
+                            </li>
+                            <li>테이블
+                                <a href="#"></a>
+                            </li>
+                            <li>수납
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+                <ul class="whole" id="whol2">
+                    <li class="wholeTitle">
+                        <span class="wholeIcon" id="wholIcon2"></span>
+                        HOMEWARE
+                        <a href="#"></a>
+                    </li>
+                    
+                    <li class="wholeList">
+                        <ul>
+                            <li>거울
+                                <a href="#"></a>
+                            </li>
+                            <li>시계
+                                <a href="#"></a>
+                            </li>
+                            <li>소품
+                                <a href="#"></a>
+                            </li>
+                            <li>키친 용품
+                                <a href="#"></a>
+                            </li>
+                            <li>테이블웨어
+                                <a href="#"></a>
+                            </li>
+                            <li>쿠션
+                                <a href="#"></a>
+                            </li>
+                            <li>매트/카페트
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <ul class="whole" id="whol3">
+                    <li class="wholeTitle">
+                        <span class="wholeIcon" id="wholIcon3"></span>
+                        LIGHTING
+                        <a href="#"></a>
+                    </li>
+                    
+                    <li class="wholeList">
+                        <ul>
+                            <li>플로어 스탠드
+                                <a href="#"></a>
+                            </li>
+                            <li>테이블 스탠드
+                                <a href="#"></a>
+                            </li>
+                            <li>팬던트
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+                <ul class="whole" id="whol4">
+                    <li class="wholeTitle">
+                        <span class="wholeIcon" id="wholIcon4"></span>
+                        LIFE
+                        <a href="#"></a>
+                    </li>
+                    
+                    <li class="wholeList">
+                        <ul>
+                            <li>가전
+                                <a href="#"></a>
+                            </li>
+                            <li>욕실
+                                <a href="#"></a>
+                            </li>
+                            <li>홈케어
+                                <a href="#"></a>
+                            </li>
+                            <li>휴지통
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div id="searchBtn">
+                <div id="searchWrap">
+                    <h1 id="searchTitle">SEARCH</h1>
+                    <span id="searchClo"></span>
+
+                    <div id="searchMap">
+                        <form action="#">
+                            <div id="searchInp">
+                                <input type="text" id="searchAr">
+                                <label for="searchAr" id="searchLab">상품명을 입력하세요.</label>
+                                <a href="#" id="searchpoint"></a>
+                            </div>
+                        </form>
+                    </div>
+                    <ul id="searchList">
+                        <li>
+                            #빌라레코드
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            #나뚜찌
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            #거실
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            #조명
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            #가죽소파
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <aside id="shopbagBtn">
+                <div id="shopbagMenu">
+                    <sapn id="casabtn"></sapn>
+                    <p>까사리빙 회원의 멤버쉽 혜택</p>
+                    <span id="shopbagClo"></span>
+                </div>
+
+                <div id="shopwrap">
+                    <div id="shopOthr">
+                        <ul id="shopOrder" class="othrMenu">
+                            <li class="shopTitle">
+                                ORDER
+                            </li>
+                            <li class="shopothrList">
+                                <ul>
+                                    <li>주문배송조회</li>
+                                    <li>교환반품관리</li>
+                                    <li>증빙서류발급</li>
+                                    <li>배송지관리</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="shopShopping" class="othrMenu">
+                            <li class="shopTitle">
+                                SHOPPING
+                            </li>
+                            <li class="shopothrList">
+                                <ul>
+                                    <li>라이크잇</li>
+                                    <li>포인트관리</li>
+                                    <li>쿠폰관리</li>
+                                    <li>리뷰관리</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="shopHelp" class="othrMenu">
+                            <li class="shopTitle">
+                                HELP
+                            </li>
+                            <li class="shopothrList">
+                                <ul>
+                                    <li>공지사항</li>
+                                    <li>자주묻는질문</li>
+                                    <li>1:1문의</li>
+                                    <li>멤버십혜택</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cartList" class="cartImgList">
+                        <h3>장바구니</h3>
+                        <span></span>
+                        <div class="cartItem">
+                           장바구니에 담긴 상품이 없습니다.
+                        </div>
+                    </div>
+                    <div id="cartItemLook" class="cartImgList">
+                        <h3>최근 본 상품</h3>
+                        <div class="cartItem">
+                           최근 본 상품이 없습니다.
+                        </div>
+                    </div>
+                    <div id="cartLikeit" class="cartImgList">
+                        <h3>라이크잇 상품</h3>
+                        <div class="cartItem">
+                            구매하고 싶으신 상품을 라이크잇하세요
+                        </div>
+                    </div>
+                </div>  
+            </aside>
+
+            <div class="maindark"></div>
+        </header>
+
+
+
+        <!-- 본문 -->
+        <section id="curMain">
+
+            <!-- 본문 제목 -->
+            <article id="cur1">
+                <div id="curTitle">
+                   
+                    <ul id="curThema">
+                        <li>
+                            <h1>CURATION</h1>
+                        </li>
+                        <li>
+                            <a href="#" class="curMenu" id="curName1">#신혼집</a>
+                            <a href="#" class="curMenu" id="curName2">#원목가구</a>
+                            <a href="#" class="curMenu" id="curName3">#인테리어</a>
+                        </li>
+                    </ul>
+                    <div id="curSearch">
+                        <form action="#">
+                            <input type="text" placeholder="SEARCH">
+                            <ul id="searchBoxbtn">
+                                <li id="cursearchBtn"></li>
+                                <li id="cursearchclo"></li>
+                            </ul>
+                        </form>
+                    </div>
+                    <span id="searchIcon"></span>
+                </div>
+            </article>
+
+            <!-- 본문 이미지 슬라이드 -->
+
+            <article id="cur2">
+                <div id="curimgWrap">
+                    <div class="curImg" id="curImg1">
+                        <div class="curImgSlide"></div>
+                        <div id="curEx">
+                            <div class="curimgEx">
+                                <h1>에코 크리스마스</h1>
+                                <p>환경을 생각하는 홀리데이 플랜테리어 플랜트 디자인 스튜디오 슬로우 ..</p>
+                                <div class="curExBox">#인테리어</div>
+                                <div class="curExlike"></div>
+                            </div>
+                         </div>
+                    </div>
+                   
+                    <ul class="curImgbtn">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="curPrev">
+                        <div class="curPrevImg"></div>
+                        <div class="prevEx">
+                            <div class="exBox" id="exBox1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curNext">
+                        <div class="curNextImg"></div>
+                        <div class="nextEx">
+                            <div class="exBox" id="exBox1">
+                                12월 크리스마스 메모리
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="cur3" class="curThemaList1">
+                    <div id="curMenuList">
+                        <ul>
+                            <li>
+                                <div class="curMenuimg" id="curMenuimg1">
+                                    <div class="addImg" id="addImg1"></div>
+                                </div>
+                                <p class="curMenutitle">에코 크리스마스</p>
+                                <p class="curMenuBox">#인테리어</p>
+                                <span class="curMenulike">
+                                    <div class="curlikeBox"></div>
+                                    <div class="count"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <div class="curMenuimg" id="curMenuimg2">
+                                    <div class="addImg" id="addImg2"></div>
+                                </div>
+                                <p class="curMenutitle">12월 크리스마스 메모리</p>
+                                <p class="curMenuBox">#인테리어</p>
+                                <span class="curMenulike">
+                                    <div class="curlikeBox"></div>
+                                    <div class="count"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <div class="curMenuimg" id="curMenuimg3">
+                                    <div class="addImg" id="addImg3"></div>
+                                </div>
+                                <p class="curMenutitle">카멜레온 매력, 사이드보드</p>
+                                <p class="curMenuBox">#인테리어</p>
+                                <span class="curMenulike">
+                                    <div class="curlikeBox"></div>
+                                    <div class="count"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <div class="curMenuimg" id="curMenuimg4">
+                                    <div class="addImg" id="addImg4"></div>
+                                </div>
+                                <p class="curMenutitle">어울림에 머물다</p>
+                                <p class="curMenuBox">#인테리어</p>
+                                <span class="curMenulike">
+                                    <div class="curlikeBox"></div>
+                                    <div class="count"></div>
+                                </span>
+                            </li>
+                        </ul>                        
+                    </div>
+            </article>
+
+        </section>
+
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="fTop">
+                <ul id="notice">
+                    <li>
+                        <h4>NOTICE</h4>
+                    </li>
+                    <li>
+                        <p>카카오 채널 오픈 안내
+                            <a href="#"></a>
+                        </p>
+                        <span id="newNot">N</span>
+                         
+                     </li>
+                    <li>
+                        <p>이용약관 병경 사전 안내
+                            <a href="#"></a>
+                        </p>
+                         
+                     </li>
+                    <li>
+                        <p>개인정보 처리방침 변경 사전 안내
+                            <a href="#"></a>
+                        </p>
+                         
+                     </li>
+                    <li>
+                        <p>고객센터 연결에 불편드려 죄송합니다.
+                            <a href="#"></a>
+                        </p>
+                         
+                     </li>
+                </ul>
+                <ul id="csCenter">
+                 <li>
+                     <h4>CS CENTER</h4>
+                 </li>
+                 <li>
+                     <h1>1644-4676</h1>
+                 </li>
+                 <li>
+                     <span>09:00~16:30</span>
+                     <p>MON-FRI</p>
+                 </li>
+                 <li>
+                     <span>12:00~13:00</span>
+                     <p>LUNCH TIME</p>
+                 </li>
+                 <li>
+                     <span>WEEKEND/HOLIDAY</span>
+                     <p>OFF</p>
+                 </li>
+             </ul>
+            </div>
+            <div class="fBottom">
+                 <div id="footBLeft">
+                     <ul id="fList1">
+                         <li>
+                             <p>까사리빙 소개</p>
+                         </li>
+                         <li>
+                             <p>개인정보취급방침</p>
+                         </li>
+                         <li>
+                             <p>이용약관</p>
+                         </li>
+                     </ul>
+                     <ul id="fList2">
+                         <li>
+                             <p>
+                                 ㈜시공사
+                             </p>
+                         </li>
+                         <li>
+                             <p>
+                                 대표자:윤호권
+                             </p>
+                         </li>
+                         <li>
+                             <p>
+                                 개인정보책임자:이시민
+                                 <span>cs@casa.co.kr</span>
+                             </p>
+                         </li>
+                         <li>
+                             <p>
+                                 고객센터 1644-4676
+                             </p>
+                         </li>
+                     </ul>
+                     <ul id="fList3">
+                         <li>
+                             <p>서울시 서초구 사임당로 82</p>
+                         </li>
+                         <li>
+                             <p>사업자번호:214-81-33375</p>
+                         </li>
+                         <li>
+                             <p>통신판매업신고 제2001-서울서초-00591호</p>
+                         </li>
+                         <li>
+                             <button>사업자정보확인</button>
+                         </li>
+                     </ul>
+                 </div>
+                 <div id="footBRight">
+                     <div id="insta">
+                         <a href="#"></a>
+                     </div>
+                 </div>
+            </div>
+         </footer>
+         
+        <div class="topBtn">
+            <div id="topArrow">
+
+            </div>
+    </div>
+</body>
+</html>

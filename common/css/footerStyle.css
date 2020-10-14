@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans', 'Barlow', 'Nanum square';
+}
+
+body{
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+.wrap{
+    width: 95%;
+    margin:0 auto;
+}
+
+
+/* 푸터 */
+
+
+footer{
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+}
+.fTop{
+    width: 100%;
+    height: 160px;
+    
+}
+
+/* 푸터 공지사항 */
+#notice{
+    width: auto;
+    height: 100%;
+    float: left;
+
+}
+#notice > li{
+    line-height: 25px;
+    color: #666;
+
+}
+
+#notice > li > h4{
+    color: #000;
+    font-weight: bold;
+}
+#notice > li > p{
+    font-size: 14px;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+}
+
+#notice > li > p > a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+#newNot{
+    width: 25px;
+    text-align: center;
+    background-color: #ff9c00;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+/* 업무시간, 연락처 */
+
+#csCenter{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+
+#csCenter>li{
+    line-height: 25px;
+}
+#csCenter>li:first-child{
+    margin-bottom: 40px;
+    text-align: right;
+}
+#csCenter>li>h4, h1{
+    width: 100%;
+    float: right;
+    color: #333;
+}
+
+#csCenter > li > h1{
+    font-size: 40px;
+    margin-bottom: 5px;    
+}
+
+#csCenter>li>span{
+    float: left;
+    font-size: 14px;
+}
+
+
+#csCenter>li>p{
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+/* 푸터 밑부분 */
+
+
+.fBottom{
+    width: 100%;
+    height: 120px;
+    border-top: 2px solid #666;
+}
+
+
+/* 푸터 회사 정보 */
+
+
+#footBLeft{
+    width: 800px;
+    height: 100%;
+    float: left;
+    color: #999;
+}
+#footBLeft >ul{
+    font-size: 14px;
+    line-height: 20px;
+}
+#footBLeft > ul >li{
+    float: left;
+    margin-right: 20px;
+}
+#footBLeft > ul >li>p{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+#footBLeft > ul > li>p:before{
+    content: '';
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid #999;
+    position: absolute;
+    bottom: 1px;
+    right: -10px;
+}
+#footBLeft >ul>li:last-child > p:before{
+    content: '';
+    border-right: 0px;
+}
+ul#fList1{
+   padding: 20px 0 30px;
+   line-height: unset;
+   font-size: 14px;
+}
+#fList2{
+    width: 100%;
+    height: 20px;
+}
+#fList3{
+    width: 100%;
+    height: 20px;
+    padding-top: 5px;
+}
+
+#fList3 > li:nth-child(3){
+    margin-right: 10px;
+}
+
+#fList3 > li:nth-child(3) >  p::before{
+    content: '';
+    border-right: 0px;
+}
+
+#fList3 > li >button{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #999999;
+    padding: 3px;
+    font-size: 12px;
+    background-color: white;
+    color: #999;
+}
+
+#footBRight{
+    width: auto;
+    float: right;
+}
+
+/* 푸터 인스타 */
+
+#insta{
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/footer/btn_footer_sns_instargram.png');
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    position: relative;
+}
+
+#insta > a{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
